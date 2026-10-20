@@ -4,6 +4,6 @@ body {
     color: #333;
 }
 
-h1 {
-    color: navy;
+h1, p{
+    color: blue;
 }

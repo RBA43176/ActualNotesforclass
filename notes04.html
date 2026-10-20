@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+   
+        <style>
+            #box {
+                border-style : solid;
+                color:blueviolet;
+                width: 100px;
+                height: 100px;
+                /* background-color: blue; */
+            }  
+        </style>
+    </head>
+   
+    <body>
+        <button id="toggleBtn" type="button">Click Me!</button>
+        <div id="box">
+           
+        </div>
+
+         <script>
+            // 1. Set the contrant or the var
+            const toggleBtn = document.getElementById("toggleBtn");
+            const box = document.getElementById("box");
+
+            // 2. On click, toggle bwtween blue and red
+            toggleBtn.addEventListener("click",
+                function(){
+                if (box.style.backgroundColor === 'blue')
+                {
+                    box.style.backgroundColor = 'red'
+                    // alert("Button was clicked!");
+                }
+                else
+                {
+                    box.style.backgroundColor = 'blue'
+                }                
+            });
+
+            // 3. On double click
+            toggleBtn.addEventListener("dblclick", function()
+            {
+                box.style.backgroundColor = "white";
+            });
+
+        </script>
+    </body>
+</html>
